@@ -7,6 +7,7 @@
 + [Technologies stack](#technologies)
 + [How to run project](#how-to-run-project)
 
+<a name="description"></a>
 ## Description (⌐■_■)
 This application is a simple implementation of the cinema functionality, where you can buy tickets for movies that are screenings in a particular room. Built on popular Java technologies such as Spring and Hibernate. Inlcludes authentication/authorization, REST and global expection handler.
 
