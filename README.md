@@ -2,8 +2,7 @@
 
 ## Contents
 + [Description](#description)
-+ [Features for Admin role](#features-for-admin-role)
-+ [Features for User role](#features-for-user-role)
++ [Features](#features)
 + [Technologies stack](#technologies)
 + [How to run project](#how-to-run-project)
 
@@ -11,9 +10,10 @@
 ## Description (⌐■_■)
 This application is a simple implementation of the cinema functionality, where you can buy tickets for movies that are screenings in a particular room. Built on popular Java technologies such as Spring and Hibernate. Inlcludes authentication/authorization, REST and global expection handler.
 
-<a name="features-for-admin-role"></a>
-## **Features for Admin role**
-- Registration of a user (`POST: /register`)
+<a name="features></a>
+## Features
+### For Admin role
+- Registration and authorization (`POST: /register`, `GET: /login`)
 - Viewing: 
      - cinema halls (`GET: /cinema-halls`)
      - movies (`GET: /movies`)
@@ -27,8 +27,8 @@ This application is a simple implementation of the cinema functionality, where y
 - Get some user by email (`GET: /users/by-email`)
 - Logout (`GET: /logout`)
 
-<a name="features-for-user-role"></a>
-## Features for User role
+### For User role
+- Registration and authorization (`POST: /register`, `GET: /login`)
 - Viewing:
   - cinema halls (`GET: /cinema-halls`)
   - movies (`GET: /movies`)
@@ -38,6 +38,9 @@ This application is a simple implementation of the cinema functionality, where y
 - Complete orders (`POST: /orders/complete`) 
 - Add tickets  to shopping cart for some movie session (`PUT: /shopping-carts/movie-sessions`)
 - Logout (`GET: /logout`)
+
+### For All
+- Registration and authorization (`POST: /register`, `GET: /login`)
 
 <a name="technologies"></a>
 ## **Technologies stack**
@@ -52,10 +55,10 @@ This application is a simple implementation of the cinema functionality, where y
 2. Download and install Tomcat (version 9.0.63).
 3. Download and install MySQL.
 4. Create schema (`cinema`)
-5. Clone it to your IDE.
-6. Add your username and password from database in `db.properties` file.
+5. Clone project to your IDE.
+6. Add your username, password and DB url in `db.properties` file.
 7. Use Postman to send requests.
 
-There is two injected profiles you can use to test application:
-+ Admin with email `admin@i.ua` and password `12345`
-+ User with email `user@i.ua` and password `12345`
+There are two injected profiles you can use to test application:
++ Admin with email: `admin@i.ua` and password: `12345`
++ User with email: `user@i.ua` and password: `12345`
